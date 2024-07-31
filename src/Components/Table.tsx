@@ -34,7 +34,7 @@ export default function UserTable() {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
   useEffect(() => {
-    fetch("/api/users/") //ส่วนที่แก้ไข
+    fetch("/users/") //ส่วนที่แก้ไข
       .then(res => {
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
