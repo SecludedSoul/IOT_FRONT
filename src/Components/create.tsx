@@ -46,7 +46,7 @@ export default function Create() {
     };
 
     try {
-      const response = await fetch('/users/create', {
+      const response = await fetch('/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
